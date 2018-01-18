@@ -16,7 +16,7 @@ function setup() {
 	var allwords = txt.join("\n");
 	//sperates each token into sperate (splits by all spaces and punctiation)
 	var tokens = allwords.split(/\W+/);
-	console.log("tokens");
+	console.log(tokens);
 
 
 
