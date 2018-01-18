@@ -1,5 +1,6 @@
 
 var txt;
+var counts = {}; //value of object
 
 //loads the text file before hand
 function preload() {
@@ -17,6 +18,15 @@ function setup() {
 	//sperates each token into sperate (splits by all spaces and punctiation)
 	var tokens = allwords.split(/\W+/);
 	console.log(tokens);
+	//loops through words looking for new words
+	for (var i =0; i< tokens.length; i++) {
+		var word = tokens[i];
+		if (counts[word] === undefined) {
+			counts[words] = 1; 
+	} else {
+		counts[word]+= 1;
+	}
+	}
 
 
 
