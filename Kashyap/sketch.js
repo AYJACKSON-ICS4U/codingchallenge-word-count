@@ -22,20 +22,20 @@ function setup() {
 	for (var i =0; i< tokens.length; i++) {
 		var word = tokens[i].toLowerCase(); //converts all to lower case
 		//doesnt allow numbers
-		if(!/\d+/.test(word)){
-			if (counts[word] === undefined) {
-				counts[word] = 1; 
-				keys.push(word); 
-			} else {
-				counts[word]+= 1;
-			}
-		}
-	}
+		if (!/\d+/.test(word)) {
+      if (counts[word] === undefined) {
+        counts[word] = 1;
+        keys.push(word);
+      } else {
+        counts[word] = counts[word] + 1;
+      }
+    }
+  }
 
-	for (var i = 0; i < keys.leght; i++) {
-		var key = keys[i];
-		createDiv(key + " " + counts[key]);
-	}
+	for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    createDiv(key + " " + counts[key]);
+  }
 
 
 	noCanvas();
