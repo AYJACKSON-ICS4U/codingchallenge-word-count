@@ -21,11 +21,14 @@ function setup() {
 	//loops through words looking for new words
 	for (var i =0; i< tokens.length; i++) {
 		var word = tokens[i];
-		if (counts[word] === undefined) {
-			counts[words] = 1; 
-	} else {
-		counts[word]+= 1;
-	}
+		//doesnt allow numbers
+		if(!/\d+/.test(word)){
+			if (counts[word] === undefined) {
+				counts[words] = 1; 
+			} else {
+				counts[word]+= 1;
+			}
+		}
 	}
 
 
