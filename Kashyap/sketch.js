@@ -40,7 +40,7 @@ function setup() {
     return countB - countA;
   }
 
-  for (var i = 0; i < keys.length; i++) {
+  for (var i = 0; i < keys.length; i++) { 	//displays the array
   	var key = keys[i];
   	createDiv(key + " " + counts[key]);
   }
