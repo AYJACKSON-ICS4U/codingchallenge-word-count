@@ -24,7 +24,7 @@ function setup() {
 		//doesnt allow numbers
 		if(!/\d+/.test(word)){
 			if (counts[word] === undefined) {
-				counts[words] = 1; 
+				counts[word] = 1; 
 			} else {
 				counts[word]+= 1;
 			}
